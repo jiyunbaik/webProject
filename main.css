@@ -1,0 +1,92 @@
+body {
+	background-color: black;	
+	color: white;
+	font-family :Arial,Times,serif;
+	width: 800px;		
+	margin: 15px auto;
+	padding-top: 15px auto;
+}
+
+a:link {
+	color : white;
+}
+		
+a:hover {	
+	color : yellow;
+}
+		
+a:visited {
+	color:red;
+}
+
+.head {
+			margin-bottom: 30px;
+			padding-bottom: 5px;
+			float: right;
+			text-align: center;
+			font-style: italic;
+			text-shadow: 5px 5px 5px red;
+		}
+
+.coverpic {
+	float: left;
+	padding-left: 20px;
+	height: 150px;
+	width: 215px;
+
+}
+
+.subhead:first-letter {
+			font-size: 1.5em;
+		}
+
+.subhead {
+	text-shadow: 2px 2px 2px red;
+}
+
+.characterbox {
+	padding: 2.5px 10px 230px 10px;
+	clear: both;
+	border: 1px solid red;
+	border-radius: 10px;
+	box-shadow: 10px 5px 10px red;
+}
+
+.characterpic {
+	float: left;
+	padding-left: 20px;
+	height: 200px;
+	width: 300px;
+}
+
+.character {
+	float: right;
+	padding-right: 20px;
+	
+}
+
+.name {
+	font-style: italic;
+	color: yellow;
+}
+.plotbox {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 2.5px 10px 30px 10px;
+	clear: both;
+	border: 1px solid red;
+	border-radius: 10px;
+	box-shadow: 10px 5px 10px red;
+}
+
+.plot {
+	padding: 0px 20px;
+}
+
+.next {
+	float: right;
+}
+
+.previous {
+	float: left;
+}

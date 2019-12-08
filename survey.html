@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey</title>
+	<link rel="stylesheet" href="main.css">
+	<script src="survey.js"></script>
+	<style>
+		body {
+
+		}
+		h1 {
+			text-align: center;
+			font-style: italic;
+			text-shadow: 5px 5px 5px red;
+			margin-bottom: 40px;			
+		}
+
+		#form {
+			padding: 20px;
+			box-shadow: 2px 2px 20px 20px red;
+		}
+
+		span {
+			font-style: italic;
+			color: red;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Survey Form</h1>
+	<form id="form" name="Survey" action="confirmation.html" method="get"> 		
+		First Name: <input type="text" id="firstName" autofocus>&nbsp;&nbsp;<span id="fName"></span><br>
+		Last Name: <input type="text" id="lastName">&nbsp;&nbsp;<span id="lName"></span><br>
+		E-mail: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="eMail">&nbsp;&nbsp;<span id="mail"></span><br>	
+		<br>
+		<fieldset> 
+			<legend>Gender</legend> 
+			<input type="radio" name="genderType" value="male" checked> Male
+			<input type="radio" name="genderType" value="female"> Female	
+		</fieldset>
+		<br>
+		<br>
+		<fieldset>
+			<legend>Which episodes have you watched</legend>
+			<br><input type="checkbox" name="ep1" value="ep1"> Episode I - The Phantom Menace
+			<br><input type="checkbox" name="ep2" value="ep2"> Episode II - Attack of the clones
+			<br><input type="checkbox" name="ep3" value="ep3"> Episode III - Revenge of the Sith
+			<br><input type="checkbox" name="ep4" value="ep4"> Episode IV - A New Hope
+			<br><input type="checkbox" name="ep5" value="ep5"> Episode V - The Empire Strikes Back
+			<br><input type="checkbox" name="ep6" value="ep6"> Episode VI - Return of Jedi
+			<br><input type="checkbox" name="ep7" value="ep7"> Episode VII - The Force Awakens
+			<br><input type="checkbox" name="ep8" value="ep8"> Episode VIII - The Last Jedi
+		</fieldset>		
+		<br>		
+		<fieldset> 
+			<legend>Did this website help you understand storyline?</legend> 
+			<input type="radio" name="yesNo" value="yes" checked> Yes
+			<input type="radio" name="yesNo" value="no"> No
+		</fieldset>
+		<br>
+		<p>Please enter your comments about this website</p>
+		<textarea name="comment" id="textBox" cols="50" rows="10" placeholder="Enter your comments here">
+		</textarea>
+		<br>
+		<p>Rate this Website from 1 to 10 &nbsp;&nbsp;<input type="number" id="rate" min="1" max="10" step="1">&nbsp;&nbsp;<span id="r"></span></p>
+		<input type = "button" id="btn" value="validate and submit" onclick="sendSurvey()">
+		<input type="reset" value="Clear">
+	</form>
+</body>
+</html>
